@@ -88,4 +88,4 @@ var matrix = [
     [4,5,6],[true, "word", 5.7],[0,-100]
 ];
 matrix[1][0] = 90;
-console.log(matrix)
+console.log(matrix);
