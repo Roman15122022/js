@@ -38,7 +38,7 @@ console.log("Math : " + Math.PI);
 console.log("Math : " + Math.E);
 console.log("Math : " + Math.min(4,54,47,6,-9,0));
 console.log("Math : " + Math.max(4,54,47,6,-9,0));
-/*----------------------------------------------*/
+/*If----------------------------------------------*/
 var number = 15;
 var isHasHause = true;
 
@@ -72,3 +72,20 @@ switch (string){
     default:
         console.log("default");
 }
+
+
+/*Massive
+* -----------------------------*/
+var arr = new Array(54, 7, 6);
+var arr2 = [5,78,87, true, "word", 5.7];
+console.log(arr2);
+console.log(arr2[3]);
+arr2[3] = "1000";
+console.log(arr2[3]);
+console.log(arr2.length);
+
+var matrix = [
+    [4,5,6],[true, "word", 5.7],[0,-100]
+];
+matrix[1][0] = 90;
+console.log(matrix)
