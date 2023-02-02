@@ -89,3 +89,50 @@ var matrix = [
 ];
 matrix[1][0] = 90;
 console.log(matrix);
+
+
+/*cycles
+* -----------------------------------*/
+/*for (var i = 1; i <= 10; i++){
+    console.log(i);
+}*/
+console.log("-----------------------")
+
+/*
+var j = 1000;
+while (j >10){
+    console.log(j + " -7")
+    j -= 7;
+}*/
+
+/*
+var isHasCar = true;
+while (isHasCar){
+
+}*/
+
+/*
+var x =0;
+do {
+    console.log(x);
+    x++;
+}while (x<50)
+*/
+
+/*
+for (var t = 10; t <= 20; t++){
+    if (t>15)
+        break;
+    console.log(t);
+}*/
+
+var arr_arr = [5,8,9,4,6,1, "string"];
+ for (var g = 0; g < arr_arr.length; g++){
+     for (var k = 0; k < arr_arr.length; k++){
+         arr_arr[k] *= 2;
+     }
+
+     console. log("Элемент "  + (g+1) + ": " + arr_arr[g]);
+
+ }
+
