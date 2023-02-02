@@ -38,3 +38,37 @@ console.log("Math : " + Math.PI);
 console.log("Math : " + Math.E);
 console.log("Math : " + Math.min(4,54,47,6,-9,0));
 console.log("Math : " + Math.max(4,54,47,6,-9,0));
+/*----------------------------------------------*/
+var number = 15;
+var isHasHause = true;
+
+
+if ( number ==5 && !isHasHause ){
+    console.log("Ok");
+}
+else if(number == 7){
+    console.log("7!")
+}
+else if (number <10 ){
+    console.log("Nice");
+}
+
+else  if (number >= 15){
+    console.log(">=15")
+}
+else {
+    console.log("Not ok");
+}
+
+var string = "word";
+
+switch (string){
+    case '4' :
+        console.log("Variable 4");
+        break;
+    case 'word' :
+        console.log("WORD!");
+        break;
+    default:
+        console.log("default");
+}
