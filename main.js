@@ -126,6 +126,7 @@ for (var t = 10; t <= 20; t++){
     console.log(t);
 }*/
 
+/*
 var arr_arr = [5,8,9,4,6,1, "string"];
  for (var g = 0; g < arr_arr.length; g++){
      for (var k = 0; k < arr_arr.length; k++){
@@ -135,4 +136,40 @@ var arr_arr = [5,8,9,4,6,1, "string"];
      console. log("Элемент "  + (g+1) + ": " + arr_arr[g]);
 
  }
+*/
 
+/*Alert,prompt,confirm*/
+
+
+/*
+for (var l = 0; l<3;l++){
+alert("Good whether");
+}*/
+
+/*
+ var data = confirm("Confirm?");
+ if(data){
+     alert("Okay");
+ }
+ else {
+     console.log("Why?");
+ }
+*/
+
+/*
+var data =  prompt("Say, how old are you?", 18);
+if(data<18 && data!=null){
+    alert("You not adult");
+}
+else if(data == null){
+    alert("Okay")
+}
+ else alert("You are " + data);*/
+
+var person = null;
+if(confirm("You are sure?")){
+    person = prompt("Your Name");
+    alert("Hi, " + person)
+} else {
+    alert("You press on cancel")
+}
