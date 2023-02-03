@@ -166,10 +166,53 @@ else if(data == null){
 }
  else alert("You are " + data);*/
 
+/*
 var person = null;
 if(confirm("You are sure?")){
     person = prompt("Your Name");
     alert("Hi, " + person)
 } else {
     alert("You press on cancel")
+}*/
+
+/*function
+* -----------------------------------------*/
+
+/*
+function info(word) {
+    console.log(word +'!')
+    console.log("!")
 }
+
+function summ(a,b){
+    var res = a + b;
+    info(res)
+}
+
+summ(5,7)
+*/
+
+/*function summa(arr){
+    var sum = 0;
+    for (var i = 0; i < arr.length; i++){
+        sum += arr[i];
+    }
+    return sum;
+}
+
+var array = [5,4,3,2,1];
+var array2 = [5,45,2,12,1];
+
+ var  res = summa(array2);
+ console.log(res);
+
+summa(array);*/
+
+//var n = 10;
+
+/*
+function inf(){
+    var n = 10;
+    console.log(n)
+}
+inf();*/
