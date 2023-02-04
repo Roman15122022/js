@@ -216,3 +216,25 @@ function inf(){
     console.log(n)
 }
 inf();*/
+
+/*event
+* ---------------------------------------*/
+
+var counter = 0;
+
+function onClickButton(el){
+    counter++;
+    el.innerHTML = "You press on button : " + counter;
+    /*el.style.background = "red";
+    el.style.color = "white";*/
+    el.style.cssText = "border-radius: 5px; font-size: 20px;";
+
+
+}
+
+function onInput(el){
+    if(el.value == 'Hello'){
+        alert("Hi)))")
+    }
+   // console.log(el.value);
+}
