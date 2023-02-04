@@ -220,13 +220,14 @@ inf();*/
 /*event
 * ---------------------------------------*/
 
+/*
 var counter = 0;
 
 function onClickButton(el){
     counter++;
     el.innerHTML = "You press on button : " + counter;
-    /*el.style.background = "red";
-    el.style.color = "white";*/
+    /!*el.style.background = "red";
+    el.style.color = "white";*!/
     el.style.cssText = "border-radius: 5px; font-size: 20px;";
 
 
@@ -237,4 +238,25 @@ function onInput(el){
         alert("Hi)))")
     }
    // console.log(el.value);
+}*/
+
+
+/*control HTML*/
+
+var text = document.getElementById('text');
+console.log(text.title);
+text.style.backgroundColor = 'blue';
+
+text.innerHTML = "New<br> string "
+
+//document.getElementById('text').style.color = 'purple';
+
+
+//var spans = document.getElementsByTagName('span')
+
+
+var spans = document.getElementsByClassName('simple-text')
+
+for (var i = 0; i < spans.length; i++){
+    console.log(spans[i].innerHTML);
 }
