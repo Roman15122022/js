@@ -265,6 +265,7 @@ for (var i = 0; i < spans.length; i++){
 
 /*Form
 * --------------------------------------*/
+/*
 document.getElementById('main-form').addEventListener("submit", checkForm);
 function checkForm(event){
     event.preventDefault();
@@ -300,4 +301,29 @@ function checkForm(event){
 
     }
 
+}*/
+
+/*timer interval
+* ------------------------------*/
+/*
+var id = setInterval(my__func, 1000);
+
+var counter = 0;
+function my__func(){
+    counter++;
+    console.log(counter)
+    if (counter == 3){
+        clearInterval(id);
+    }
 }
+*/
+
+/*
+setInterval(function (){
+    counter++;
+    console.log(counter);
+}, 1000);*/
+
+setTimeout(function (){
+    console.log("Working")
+}, 2000);
