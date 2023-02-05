@@ -243,6 +243,7 @@ function onInput(el){
 
 /*control HTML*/
 
+/*
 var text = document.getElementById('text');
 console.log(text.title);
 text.style.backgroundColor = 'blue';
@@ -259,4 +260,44 @@ var spans = document.getElementsByClassName('simple-text')
 
 for (var i = 0; i < spans.length; i++){
     console.log(spans[i].innerHTML);
+}
+*/
+
+/*Form
+* --------------------------------------*/
+document.getElementById('main-form').addEventListener("submit", checkForm);
+function checkForm(event){
+    event.preventDefault();
+    var el = document.getElementById('main-form');
+    var name = el.name.value;
+    var pass = el.pass.value;
+    var repass = el.repass.value;
+    var state = el.state.value;
+
+    var fail = "";
+
+    if (name == "" || pass == "" || state == ""){
+        fail = "Fill in all the fields";
+
+    }
+    else if (name.length<2 || name.length>20){
+        fail = 'Write correctly name!';
+    }
+    else if (pass != repass){
+        fail = "Password mismatch ";
+    }
+    else if (pass.split("&").length>1){
+        fail = "Not correctly pass";
+    }
+
+    if (fail != ""){
+        document.getElementById('error').innerHTML = fail;
+
+    }
+    else {
+        alert("All right");
+        window.location = 'https://www.youtube.com/watch?v=1nzH6WCEonQ&list=PLDyJYA6aTY1kJIwbYHzGOuvSMNTfqksmk&index=14';
+
+    }
+
 }
