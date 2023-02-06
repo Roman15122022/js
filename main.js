@@ -278,7 +278,7 @@ function checkForm(event){
     var fail = "";
 
     if (name == "" || pass == "" || state == ""){
-        fail = "Fill in all the fields";
+;        fail = "Fill in all the fields";
 
     }
     else if (name.length<2 || name.length>20){
@@ -324,6 +324,54 @@ setInterval(function (){
     console.log(counter);
 }, 1000);*/
 
+/*
 setTimeout(function (){
     console.log("Working")
-}, 2000);
+}, 2000);*/
+
+//var date = new Date();
+
+//console.log(date.getFullYear());
+//console.log(date.getMonth()+1);
+//date.setHours(18);
+//date.setMinutes(18);
+//console.log(date.getDate());
+//console.log(date.getHours() + " : " + date.getMinutes());
+
+/*var arr123 = [-5,6,7,81,8];
+
+//console.log(arr.join(''));
+//console.log(arr123.sort());
+//console.log(arr123.reverse().join(", "))
+
+var str = arr123.reverse().join(", ");
+
+console.log(str.split(", "));*/
+
+
+/*object
+* ----------------------------*/
+class Person {
+    constructor(name, age, happiness ) {
+        this.name = name;
+        this.age = age;
+        this.happiness = happiness;
+
+    }
+     info(){
+        console.log("Human " + this.name + ", age: " + this.age)
+    }
+
+}
+
+var alex = new Person("Alex", 45 , true);
+var bob = new Person("Bob", 19 , false);
+
+//alex.name = "Roma";
+
+//console.log(alex.age);
+//console.log(alex.name);
+//console.log(bob.age);
+
+alex.info();
+bob.info();
